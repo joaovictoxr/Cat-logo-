@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Vídeos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#categoria1">Categoria 1</a></li>
+            <li><a href="#categoria2">Categoria 2</a></li>
+            <li><a href="#categoria3">Categoria 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="categoria1">
+            <h2>Categoria 1</h2>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <video controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        <source src="video1.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 1</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        <source src="video2.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 2</p>
+                </div>
+            </div>
+        </section>
+        <section id="categoria2">
+            <h2>Categoria 2</h2>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <video controls>
+                        <source src="video3.mp4" type="video/mp4">
+                        <source src="video3.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 3</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="video4.mp4" type="video/mp4">
+                        <source src="video4.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 4</p>
+                </div>
+            </div>
+        </section>
+        <section id="categoria3">
+            <h2>Categoria 3</h2>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <video controls>
+                        <source src="video5.mp4" type="video/mp4">
+                        <source src="video5.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 5</p>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="video6.mp4" type="video/mp4">
+                        <source src="video6.ogg" type="video/ogg">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                    <p>Descrição do Vídeo 6</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Catálogo de Vídeos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+vbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
